@@ -1,0 +1,9 @@
+-- CreateTable
+CREATE TABLE "Bid" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "fullName" TEXT NOT NULL,
+    "amount" REAL NOT NULL,
+    "timestamp" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "productId" TEXT NOT NULL
+    
+);

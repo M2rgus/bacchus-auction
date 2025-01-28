@@ -1,0 +1,354 @@
+{
+  "auctions": [
+    {
+      "productId": "1",
+      "productName": "Vintage Wine",
+      "productDescription": "A rare bottle of vintage wine.",
+      "productCategory": "Beverages",
+      "biddingEndDate": "2025-01-31T23:59:59.000Z"
+    },
+    {
+      "productId": "2",
+      "productName": "Antique Vase",
+      "productDescription": "A beautiful handcrafted vase.",
+      "productCategory": "Decor",
+      "biddingEndDate": "2025-02-05T12:00:00.000Z"
+    },
+    {
+      "productId": "3",
+      "productName": "Luxury Watch",
+      "productDescription": "A luxury wristwatch with diamonds.",
+      "productCategory": "Accessories",
+      "biddingEndDate": "2025-01-28T18:00:00.000Z"
+    },
+    {
+      "productId": "4",
+      "productName": "Ferrari",
+      "productDescription": "High-performance sports car.",
+      "productCategory": "Vehicles",
+      "biddingEndDate": "2025-02-10T20:00:00.000Z"
+    },
+    {
+      "productId": "5",
+      "productName": "BMW M5",
+      "productDescription": "Luxury sports sedan.",
+      "productCategory": "Vehicles",
+      "biddingEndDate": "2025-02-15T12:30:00.000Z"
+    },
+    {
+      "productId": "6",
+      "productName": "Rolex Submariner",
+      "productDescription": "A classic dive watch.",
+      "productCategory": "Accessories",
+      "biddingEndDate": "2025-01-29T14:00:00.000Z"
+    },
+    {
+      "productId": "7",
+      "productName": "MacBook Pro",
+      "productDescription": "Apple's high-end laptop.",
+      "productCategory": "Electronics",
+      "biddingEndDate": "2025-02-03T16:00:00.000Z"
+    },
+    {
+      "productId": "8",
+      "productName": "Samsung Galaxy S24",
+      "productDescription": "Latest flagship smartphone.",
+      "productCategory": "Electronics",
+      "biddingEndDate": "2025-02-07T10:00:00.000Z"
+    },
+    {
+      "productId": "9",
+      "productName": "Yamaha Grand Piano",
+      "productDescription": "Professional grand piano.",
+      "productCategory": "Music",
+      "biddingEndDate": "2025-02-20T14:00:00.000Z"
+    },
+    {
+      "productId": "10",
+      "productName": "Gibson Les Paul Guitar",
+      "productDescription": "Iconic electric guitar.",
+      "productCategory": "Music",
+      "biddingEndDate": "2025-02-25T12:00:00.000Z"
+    },
+    {
+      "productId": "11",
+      "productName": "Tesla Model S",
+      "productDescription": "Fully electric luxury sedan.",
+      "productCategory": "Vehicles",
+      "biddingEndDate": "2025-03-01T17:30:00.000Z"
+    },
+    {
+      "productId": "12",
+      "productName": "Sony 85-inch 4K TV",
+      "productDescription": "Large smart television with stunning visuals.",
+      "productCategory": "Electronics",
+      "biddingEndDate": "2025-03-05T19:00:00.000Z"
+    },
+    {
+      "productId": "13",
+      "productName": "AirPods Max",
+      "productDescription": "High-fidelity over-ear headphones.",
+      "productCategory": "Accessories",
+      "biddingEndDate": "2025-03-10T10:00:00.000Z"
+    },
+    {
+      "productId": "14",
+      "productName": "Louis Vuitton Handbag",
+      "productDescription": "Designer luxury handbag.",
+      "productCategory": "Fashion",
+      "biddingEndDate": "2025-03-15T15:00:00.000Z"
+    },
+    {
+      "productId": "15",
+      "productName": "Dyson Airwrap",
+      "productDescription": "High-tech hair styling tool.",
+      "productCategory": "Beauty",
+      "biddingEndDate": "2025-03-18T08:30:00.000Z"
+    },
+    {
+      "productId": "16",
+      "productName": "Canyon Road Bike",
+      "productDescription": "Lightweight carbon fiber road bike.",
+      "productCategory": "Sports",
+      "biddingEndDate": "2025-03-20T12:00:00.000Z"
+    },
+    {
+      "productId": "17",
+      "productName": "Gaming PC RTX 4090",
+      "productDescription": "High-performance gaming desktop.",
+      "productCategory": "Electronics",
+      "biddingEndDate": "2025-03-22T14:00:00.000Z"
+    },
+    {
+      "productId": "18",
+      "productName": "Omega Speedmaster",
+      "productDescription": "The legendary moon watch.",
+      "productCategory": "Accessories",
+      "biddingEndDate": "2025-03-24T18:00:00.000Z"
+    },
+    {
+      "productId": "19",
+      "productName": "PlayStation 5",
+      "productDescription": "Sony's latest gaming console.",
+      "productCategory": "Electronics",
+      "biddingEndDate": "2025-03-30T20:00:00.000Z"
+    },
+    {
+      "productId": "20",
+      "productName": "Gucci Sunglasses",
+      "productDescription": "Luxury designer eyewear.",
+      "productCategory": "Fashion",
+      "biddingEndDate": "2025-04-01T10:00:00.000Z"
+    },
+    {
+      "productId": "21",
+      "productName": "Bose Noise Cancelling Headphones",
+      "productDescription": "Top-tier noise-canceling headphones.",
+      "productCategory": "Accessories",
+      "biddingEndDate": "2025-04-02T15:00:00.000Z"
+    },
+    {
+      "productId": "22",
+      "productName": "iPhone 15 Pro Max",
+      "productDescription": "Apple's latest flagship smartphone.",
+      "productCategory": "Electronics",
+      "biddingEndDate": "2025-04-05T12:00:00.000Z"
+    },
+    {
+      "productId": "23",
+      "productName": "Dyson V15 Vacuum",
+      "productDescription": "High-end vacuum cleaner for homes.",
+      "productCategory": "Home",
+      "biddingEndDate": "2025-04-07T10:00:00.000Z"
+    },
+    {
+      "productId": "24",
+      "productName": "Apple Watch Ultra",
+      "productDescription": "Premium fitness smartwatch.",
+      "productCategory": "Accessories",
+      "biddingEndDate": "2025-04-10T08:30:00.000Z"
+    },
+    {
+      "productId": "25",
+      "productName": "Nikon Z9 Camera",
+      "productDescription": "Flagship full-frame mirrorless camera.",
+      "productCategory": "Photography",
+      "biddingEndDate": "2025-04-12T18:00:00.000Z"
+    },
+    {
+      "productId": "26",
+      "productName": "Canon EOS R5",
+      "productDescription": "High-resolution professional camera.",
+      "productCategory": "Photography",
+      "biddingEndDate": "2025-04-15T10:00:00.000Z"
+    },
+    {
+      "productId": "27",
+      "productName": "Samsung Smart Refrigerator",
+      "productDescription": "Family Hub™ refrigerator with Wi-Fi.",
+      "productCategory": "Appliances",
+      "biddingEndDate": "2025-04-20T19:00:00.000Z"
+    },
+    {
+      "productId": "28",
+      "productName": "Rimowa Luggage Set",
+      "productDescription": "Luxury aluminum luggage.",
+      "productCategory": "Travel",
+      "biddingEndDate": "2025-04-22T14:00:00.000Z"
+    },
+    {
+      "productId": "29",
+      "productName": "Microsoft Surface Laptop Studio",
+      "productDescription": "Versatile touchscreen laptop.",
+      "productCategory": "Electronics",
+      "biddingEndDate": "2025-04-24T17:30:00.000Z"
+    },
+    {
+      "productId": "30",
+      "productName": "Lego Millennium Falcon",
+      "productDescription": "Ultimate collector's edition Star Wars Lego.",
+      "productCategory": "Toys",
+      "biddingEndDate": "2025-05-01T16:00:00.000Z"
+    },
+    {
+      "productId": "31",
+      "productName": "Peloton Bike+",
+      "productDescription": "Advanced indoor fitness bike.",
+      "productCategory": "Fitness",
+      "biddingEndDate": "2025-05-02T20:30:00.000Z"
+    },
+    {
+      "productId": "32",
+      "productName": "Prada Boots",
+      "productDescription": "Stylish leather boots from Prada.",
+      "productCategory": "Fashion",
+      "biddingEndDate": "2025-05-03T15:00:00.000Z"
+    },
+    {
+      "productId": "33",
+      "productName": "Montblanc Fountain Pen",
+      "productDescription": "Luxurious writing instrument.",
+      "productCategory": "Stationery",
+      "biddingEndDate": "2025-05-04T10:00:00.000Z"
+    },
+    {
+      "productId": "34",
+      "productName": "Fender Stratocaster",
+      "productDescription": "Iconic electric guitar for musicians.",
+      "productCategory": "Music",
+      "biddingEndDate": "2025-05-05T14:00:00.000Z"
+    },
+    {
+      "productId": "35",
+      "productName": "Hermès Scarf",
+      "productDescription": "Elegant silk scarf from Hermès.",
+      "productCategory": "Fashion",
+      "biddingEndDate": "2025-05-06T11:00:00.000Z"
+    },
+    {
+      "productId": "36",
+      "productName": "Smeg Espresso Machine",
+      "productDescription": "Retro-style espresso machine.",
+      "productCategory": "Appliances",
+      "biddingEndDate": "2025-05-08T13:00:00.000Z"
+    },
+    {
+      "productId": "37",
+      "productName": "Monopoly Deluxe Edition",
+      "productDescription": "Deluxe version of the classic board game.",
+      "productCategory": "Toys",
+      "biddingEndDate": "2025-05-10T19:00:00.000Z"
+    },
+    {
+      "productId": "38",
+      "productName": "Dyson Supersonic Hair Dryer",
+      "productDescription": "High-speed hair dryer for professionals.",
+      "productCategory": "Beauty",
+      "biddingEndDate": "2025-05-12T08:30:00.000Z"
+    },
+    {
+      "productId": "39",
+      "productName": "Nespresso Vertuo Coffee Maker",
+      "productDescription": "Versatile coffee maker for barista-style drinks.",
+      "productCategory": "Home",
+      "biddingEndDate": "2025-05-15T10:00:00.000Z"
+    },
+    {
+      "productId": "40",
+      "productName": "Chanel No. 5 Perfume",
+      "productDescription": "Timeless fragrance from Chanel.",
+      "productCategory": "Beauty",
+      "biddingEndDate": "2025-05-20T18:00:00.000Z"
+    },
+    {
+      "productId": "41",
+      "productName": "Nike Air Jordan 1",
+      "productDescription": "Iconic basketball shoes.",
+      "productCategory": "Sports",
+      "biddingEndDate": "2025-05-22T14:00:00.000Z"
+    },
+    {
+      "productId": "42",
+      "productName": "Loewe Puzzle Bag",
+      "productDescription": "Designer leather handbag.",
+      "productCategory": "Fashion",
+      "biddingEndDate": "2025-05-24T12:30:00.000Z"
+    },
+    {
+      "productId": "43",
+      "productName": "Samsung Odyssey Gaming Monitor",
+      "productDescription": "Ultra-wide QHD gaming monitor.",
+      "productCategory": "Electronics",
+      "biddingEndDate": "2025-05-28T18:00:00.000Z"
+    },
+    {
+      "productId": "44",
+      "productName": "Burberry Trench Coat",
+      "productDescription": "Classic fashion statement piece.",
+      "productCategory": "Fashion",
+      "biddingEndDate": "2025-05-30T20:30:00.000Z"
+    },
+    {
+      "productId": "45",
+      "productName": "Garmin Fenix 7",
+      "productDescription": "Premium multisport GPS smartwatch.",
+      "productCategory": "Fitness",
+      "biddingEndDate": "2025-06-01T10:00:00.000Z"
+    },
+    {
+      "productId": "46",
+      "productName": "Louboutin Heels",
+      "productDescription": "Red-bottom high heels.",
+      "productCategory": "Fashion",
+      "biddingEndDate": "2025-06-05T12:00:00.000Z"
+    },
+    {
+      "productId": "47",
+      "productName": "Pelican Kayak",
+      "productDescription": "Lightweight recreational kayak.",
+      "productCategory": "Sports",
+      "biddingEndDate": "2025-06-08T14:00:00.000Z"
+    },
+    {
+      "productId": "48",
+      "productName": "Apple iPad Pro",
+      "productDescription": "High-performance tablet for creatives.",
+      "productCategory": "Electronics",
+      "biddingEndDate": "2025-06-10T16:00:00.000Z"
+    },
+    {
+      "productId": "49",
+      "productName": "Lego Hogwarts Castle",
+      "productDescription": "Collector's edition Harry Potter Lego set.",
+      "productCategory": "Toys",
+      "biddingEndDate": "2025-06-15T18:30:00.000Z"
+    },
+    {
+      "productId": "50",
+      "productName": "Sony A7 IV Camera",
+      "productDescription": "Versatile mirrorless camera for professionals.",
+      "productCategory": "Photography",
+      "biddingEndDate": "2025-06-20T19:00:00.000Z"
+    }
+  ]
+}
