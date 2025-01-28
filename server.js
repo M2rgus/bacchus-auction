@@ -13,13 +13,11 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-// Serve static frontend files
 app.use(express.static(path.join(__dirname, 'frontend/build')));
 
-// API Routes
 app.get('/api/auctions', async (req, res) => {
   try {
-    const response = await axios.get('http://localhost:5000/auctions'); // Mock API
+    const response = await axios.get('http://localhost:5000/auctions'); 
     res.json(response.data);
   } catch (error) {
     console.error('Error fetching auctions:', error.message);
@@ -28,7 +26,7 @@ app.get('/api/auctions', async (req, res) => {
 });
 
 app.post('/api/bid', async (req, res) => {
-  const { fullName, amount, productId, productName } = req.body; // Include productName
+  const { fullName, amount, productId, productName } = req.body;
   const timestamp = new Date();
 
   try {
@@ -38,7 +36,7 @@ app.post('/api/bid', async (req, res) => {
         amount: parseFloat(amount),
         timestamp,
         productId,
-        productName, // Store the auction item name in the database
+        productName,
       },
     });
 
@@ -50,7 +48,6 @@ app.post('/api/bid', async (req, res) => {
 });
 
 
-// Catch-all route for React SPA
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
 });

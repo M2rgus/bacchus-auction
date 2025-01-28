@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './App.css'; // Keep CSS styles
+import './App.css';
 
-const ITEMS_PER_PAGE = 10; // Maximum 10 items per page
+const ITEMS_PER_PAGE = 10;
 
 const App = () => {
   const [auctions, setAuctions] = useState([]);
@@ -11,7 +11,7 @@ const App = () => {
   const [categories, setCategories] = useState([]);
   const [bidDetails, setBidDetails] = useState({ fullName: '', amount: '', productId: null, productName: '' });
   const [message, setMessage] = useState('');
-  const [currentPage, setCurrentPage] = useState(1); // Track the current page
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     fetchAuctions();
@@ -28,15 +28,23 @@ const App = () => {
 
   const fetchAuctions = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/auctions');
-      setAuctions(response.data);
-      setFilteredAuctions(response.data);
-      initializeRemainingTime(response.data);
-      extractCategories(response.data);
+      const response = await axios.get('http://localhost:5000/auctions');
+      const currentTime = Date.now();
+  
+      const activeAuctions = response.data.filter(auction => {
+        const biddingEndTime = new Date(auction.biddingEndDate).getTime();
+        return biddingEndTime > currentTime;
+      });
+  
+      setAuctions(activeAuctions);
+      setFilteredAuctions(activeAuctions);
+      initializeRemainingTime(activeAuctions);
+      extractCategories(activeAuctions);
     } catch (error) {
       console.error('Error fetching auctions:', error.message);
     }
   };
+  
 
   const initializeRemainingTime = (auctions) => {
     const initialTimes = auctions.reduce((acc, auction) => {
@@ -65,7 +73,7 @@ const App = () => {
   const filterByCategory = (category) => {
     const filtered = auctions.filter((auction) => auction.productCategory === category);
     setFilteredAuctions(filtered);
-    setCurrentPage(1); // Reset to first page when filtering
+    setCurrentPage(1);
   };
 
   const resetFilter = () => {
@@ -118,7 +126,6 @@ const App = () => {
     return `${days}d ${hours}h ${minutes}m ${seconds}s`;
   };
 
-  // PAGINATION LOGIC
   const totalPages = Math.ceil(filteredAuctions.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
@@ -137,7 +144,6 @@ const App = () => {
     </div>
 
       
-      {/* TWO COLUMN LAYOUT */}
       <div className="auction-grid">
         {displayedAuctions.map((auction, index) => (
           <div key={auction.productId} className="auction-item">
@@ -152,20 +158,20 @@ const App = () => {
         ))}
       </div>
 
-      {/* PAGINATION BUTTONS */}
       {totalPages > 1 && (
         <div className="pagination">
-          <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1}>
-            Previous
-          </button>
-          <span>Page {currentPage} of {totalPages}</span>
-          <button onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage === totalPages}>
-            Next
-          </button>
-        </div>
+        <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1}>
+          Previous
+        </button>
+      
+        <span className="page-number">Page {currentPage} of {totalPages}</span>
+      
+        <button onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage === totalPages}>
+          Next
+        </button>
+      </div>
       )}
 
-      {/* BIDDING MODAL */}
       {bidDetails.productId && (
         <div className="modal">
           <form onSubmit={submitBid}>

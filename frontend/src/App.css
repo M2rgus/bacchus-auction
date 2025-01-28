@@ -1,4 +1,3 @@
-/* General Page Styles */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f2f5;
@@ -8,7 +7,6 @@ body {
   text-align: center;
 }
 
-/* Auction Title */
 h1 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -16,7 +14,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Category Filter Buttons */
 button {
   background-color: #007bff;
   color: white;
@@ -37,7 +34,6 @@ button:active {
   transform: scale(0.95);
 }
 
-/* Auction List */
 ul {
   list-style-type: none;
   padding: 0;
@@ -54,7 +50,6 @@ li {
   text-align: left;
 }
 
-/* Auction Item Titles */
 h3 {
   font-size: 1.7rem;
   font-weight: bold;
@@ -62,13 +57,11 @@ h3 {
   margin-bottom: 5px;
 }
 
-/* Item Details */
 p {
   font-size: 15px;
   margin: 8px 0;
 }
 
-/* Bidding Button */
 .bid-button {
   background-color: #218838;
   padding: 14px 18px;
@@ -80,9 +73,8 @@ p {
   text-align: center;
 }
 
-/* Make "Bidding on" text bigger but smaller than h2 */
 .bid-item-title {
-  font-size: 1.4rem; /* Slightly smaller than h2 */
+  font-size: 1.4rem;
   font-weight: bold;
   color: #333;
 }
@@ -91,7 +83,6 @@ p {
   background-color: #175f26;
 }
 
-/* Modal (Bidding Box) */
 .modal {
   position: fixed;
   top: 50%;
@@ -106,14 +97,12 @@ p {
   text-align: center;
 }
 
-/* Modal Title */
 .modal h2 {
   color: #0056b3;
   font-size: 1.8rem;
   margin-bottom: 15px;
 }
 
-/* Input Fields */
 .modal input {
   width: 100%;
   padding: 10px;
@@ -123,7 +112,6 @@ p {
   border-radius: 6px;
 }
 
-/* Bid & Cancel Buttons */
 .modal button {
   background-color: #007bff;
   font-size: 16px;
@@ -135,10 +123,9 @@ p {
 }
 
 .modal button:hover {
-  background-color: #218838; /* Change to green on hover */
+  background-color: #218838;
 }
 
-/* Background Blur Effect */
 .blur-background {
   position: fixed;
   width: 100%;
@@ -150,21 +137,18 @@ p {
   z-index: 10;
 }
 
-/* Disable scrolling when modal is open */
 body.modal-open {
   overflow: hidden;
 }
 
-/* Auction Grid - Two Wider Columns */
 .auction-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  max-width: 1200px; /* ✅ Increased width */
+  max-width: 1200px; 
   margin: auto;
 }
 
-/* Auction Item Box */
 .auction-item {
   background-color: white;
   border: 2px solid black;
@@ -172,7 +156,7 @@ body.modal-open {
   padding: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
-  width: 95%; /* ✅ Slightly wider */
+  width: 95%;
 }
 
 .auction-item:hover {
@@ -180,15 +164,12 @@ body.modal-open {
   border-color: #007bff;
 }
 
-/* Responsive: Single Column on Small Screens */
 @media (max-width: 900px) {
   .auction-grid {
-    grid-template-columns: 1fr; /* ✅ One column for small screens */
+    grid-template-columns: 1fr; 
   }
 }
 
-
-/* Auction Item Titles */
 .auction-item h3 {
   font-size: 1.6rem;
   font-weight: bold;
@@ -196,18 +177,17 @@ body.modal-open {
   margin-bottom: 5px;
 }
 
-/* Item Details */
 .auction-item p {
   font-size: 14px;
   margin: 5px 0;
 }
 
-/* Pagination Buttons */
 .pagination {
-  margin-top: 20px;
   display: flex;
+  align-items: center; 
   justify-content: center;
-  gap: 10px;
+  gap: 10px; 
+  margin-top: 20px;
 }
 
 .pagination button {
@@ -217,8 +197,11 @@ body.modal-open {
   font-weight: bold;
   border-radius: 8px;
   padding: 10px 15px;
+  border: none;
   cursor: pointer;
   transition: background 0.3s;
+  display: flex; 
+  align-items: center;
 }
 
 .pagination button:hover {
@@ -230,16 +213,21 @@ body.modal-open {
   cursor: not-allowed;
 }
 
-/* Button Container - Smaller Spacing */
+.page-number {
+  font-size: 18px; 
+  font-weight: bold;
+  display: flex;
+  align-items: center; 
+}
+
 .filter-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 6px; /* Reduced spacing between buttons */
-  margin-bottom: 15px; /* Slightly smaller space below buttons */
+  gap: 6px; 
+  margin-bottom: 15px; 
 }
 
-/* Buttons Style */
 .filter-buttons button {
   background-color: #007bff;
   color: white;
