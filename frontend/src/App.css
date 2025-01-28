@@ -1,0 +1,262 @@
+/* General Page Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Auction Title */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+/* Category Filter Buttons */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Auction List */
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 900px;
+  margin: auto;
+}
+
+li {
+  background-color: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Auction Item Titles */
+h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Item Details */
+p {
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+/* Bidding Button */
+.bid-button {
+  background-color: #218838;
+  padding: 14px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* Make "Bidding on" text bigger but smaller than h2 */
+.bid-item-title {
+  font-size: 1.4rem; /* Slightly smaller than h2 */
+  font-weight: bold;
+  color: #333;
+}
+
+.bid-button:hover {
+  background-color: #175f26;
+}
+
+/* Modal (Bidding Box) */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  width: 420px;
+  text-align: center;
+}
+
+/* Modal Title */
+.modal h2 {
+  color: #0056b3;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Input Fields */
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Bid & Cancel Buttons */
+.modal button {
+  background-color: #007bff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.modal button:hover {
+  background-color: #218838; /* Change to green on hover */
+}
+
+/* Background Blur Effect */
+.blur-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+/* Disable scrolling when modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Auction Grid - Two Wider Columns */
+.auction-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px; /* ✅ Increased width */
+  margin: auto;
+}
+
+/* Auction Item Box */
+.auction-item {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  width: 95%; /* ✅ Slightly wider */
+}
+
+.auction-item:hover {
+  transform: scale(1.02);
+  border-color: #007bff;
+}
+
+/* Responsive: Single Column on Small Screens */
+@media (max-width: 900px) {
+  .auction-grid {
+    grid-template-columns: 1fr; /* ✅ One column for small screens */
+  }
+}
+
+
+/* Auction Item Titles */
+.auction-item h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Item Details */
+.auction-item p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Pagination Buttons */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Button Container - Smaller Spacing */
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px; /* Reduced spacing between buttons */
+  margin-bottom: 15px; /* Slightly smaller space below buttons */
+}
+
+/* Buttons Style */
+.filter-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.filter-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.filter-buttons button:active {
+  transform: scale(0.97);
+}
+
+
